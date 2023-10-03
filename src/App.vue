@@ -1,26 +1,30 @@
 <template>
+<NavegadorVue />
 
-  <div class="hola">
-      hola
-  </div>
+  <div class="hola">hola</div>
 
   <button>apretar</button>
-    <MiComponente />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-
+  <MiComponente prueba="estoy probando" />
+  <HelloWorld msg="Welcome to Your Vue.js App" miMensaje="chau nos vemos" />
+   <CalculadoraVue /> 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import MiComponente from './components/MiComponente.vue'
+import CalculadoraVue from "./components/CalculadoraVue.vue";
+import HelloWorld from "./components/HelloWorld.vue";
+import MiComponente from "./components/MiComponente.vue";
+import NavegadorVue from './components/NavegadorVue.vue';
+
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld,
-    MiComponente
-  }
-}
+    MiComponente,
+    CalculadoraVue,
+    NavegadorVue
+  },
+};
 </script>
 
 <style>
@@ -32,11 +36,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-button{
+button {
   background-color: blue;
 }
 
-.hola{
+.hola {
   border: 5px red solid;
 }
 </style>
