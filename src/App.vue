@@ -1,27 +1,27 @@
 <template>
 <NavegadorVue />
 
-  <div class="hola">hola</div>
+  <div >hola</div>
 
-  <button>apretar</button>
+<!--   <button>apretar</button>
   <MiComponente prueba="estoy probando" />
   <HelloWorld msg="Welcome to Your Vue.js App" miMensaje="chau nos vemos" />
-   <CalculadoraVue /> 
+   <CalculadoraVue />  -->
 </template>
 
 <script>
-import CalculadoraVue from "./components/CalculadoraVue.vue";
+/* import CalculadoraVue from "./components/CalculadoraVue.vue";
 import HelloWorld from "./components/HelloWorld.vue";
-import MiComponente from "./components/MiComponente.vue";
+import MiComponente from "./components/MiComponente.vue"; */
 import NavegadorVue from './components/NavegadorVue.vue';
 
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+/*     HelloWorld,
     MiComponente,
-    CalculadoraVue,
+    CalculadoraVue, */
     NavegadorVue
   },
 };
@@ -40,7 +40,41 @@ button {
   background-color: blue;
 }
 
-.hola {
-  border: 5px red solid;
+a{
+  color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-right: 20px;
 }
+
+h3{
+  color: #000;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+h4{
+  color: #000;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+h5{
+  color: #000;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
 </style>
