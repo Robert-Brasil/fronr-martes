@@ -1,7 +1,7 @@
 <template>
 <NavegadorVue />
 
-  <div >hola</div>
+ 
 
 <!--   <button>apretar</button>
   <MiComponente prueba="estoy probando" />
