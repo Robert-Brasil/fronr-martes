@@ -1,6 +1,6 @@
 <template>
 <NavegadorVue />
-
+<ProductCard />
   <div >hola</div>
 
 <!--   <button>apretar</button>
@@ -14,6 +14,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import MiComponente from "./components/MiComponente.vue"; */
 import NavegadorVue from './components/NavegadorVue.vue';
+import ProductCard from './components/ProductCard.vue';
 
 
 export default {
@@ -22,7 +23,8 @@ export default {
 /*     HelloWorld,
     MiComponente,
     CalculadoraVue, */
-    NavegadorVue
+    NavegadorVue,
+    ProductCard
   },
 };
 </script>
@@ -36,45 +38,44 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-button {
-  background-color: blue;
-}
-
-a{
+/*titulo*/
+h1{
   color: #000;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-right: 20px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-
+/*subTitulo*/
+h2{
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 22.4px */
+}
+/*navegacion*/
 h3{
   color: #000;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-
-h4{
+/*texto general*/
+p{
   color: #000;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-
-h5{
-  color: #000;
-font-family: Inter;
-font-size: 10px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 </style>
