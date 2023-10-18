@@ -1,7 +1,12 @@
 <template>
 <NavegadorVue />
+<<<<<<< HEAD
 <ProductCard />
   <div >hola</div>
+=======
+
+ 
+>>>>>>> 1b9772b3904693b0fa8fa3827d3405062a159c29
 
 <!--   <button>apretar</button>
   <MiComponente prueba="estoy probando" />
