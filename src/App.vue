@@ -1,11 +1,7 @@
 <template>
 <NavegadorVue />
-<<<<<<< HEAD
 <ProductsVue />
-=======
-<ProductCard />
-<Componente_Leave />
->>>>>>> b641a911a81aa16d63d696d10befe8fd7ceb1220
+<LeaveVue />
   <div >hola</div>
 
 <!--   <button>apretar</button>
@@ -15,17 +11,14 @@
 </template>
 
 <script>
+import LeaveVue from './components/LeaveVue.vue';
 /* import CalculadoraVue from "./components/CalculadoraVue.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import MiComponente from "./components/MiComponente.vue"; */
 import NavegadorVue from './components/NavegadorVue.vue';
-<<<<<<< HEAD
 import ProductsVue from './components/ProductsVue.vue';
 
-=======
-import ProductCard from './components/ProductCard.vue';
-import Componente_Leave from './components/leaveVue.vue';
->>>>>>> b641a911a81aa16d63d696d10befe8fd7ceb1220
+
 
 export default {
   name: "App",
@@ -34,12 +27,8 @@ export default {
     MiComponente,
     CalculadoraVue, */
     NavegadorVue,
-<<<<<<< HEAD
-    ProductsVue
-=======
-    ProductCard,
-    Componente_Leave
->>>>>>> b641a911a81aa16d63d696d10befe8fd7ceb1220
+    ProductsVue,
+    LeaveVue
   },
 };
 </script>
