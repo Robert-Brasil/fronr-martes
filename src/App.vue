@@ -1,12 +1,8 @@
 <template>
 <NavegadorVue />
-<<<<<<< HEAD
 <ProductCard />
+<Componente_Leave />
   <div >hola</div>
-=======
-
- 
->>>>>>> 1b9772b3904693b0fa8fa3827d3405062a159c29
 
 <!--   <button>apretar</button>
   <MiComponente prueba="estoy probando" />
@@ -20,7 +16,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import MiComponente from "./components/MiComponente.vue"; */
 import NavegadorVue from './components/NavegadorVue.vue';
 import ProductCard from './components/ProductCard.vue';
-
+import Componente_Leave from './components/leaveVue.vue';
 
 export default {
   name: "App",
@@ -29,7 +25,8 @@ export default {
     MiComponente,
     CalculadoraVue, */
     NavegadorVue,
-    ProductCard
+    ProductCard,
+    Componente_Leave
   },
 };
 </script>
