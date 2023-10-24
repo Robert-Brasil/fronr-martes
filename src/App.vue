@@ -1,6 +1,5 @@
 <template>
-<NavegadorVue />
-<ProductCard />
+
 <Componente_Leave />
   <div >hola</div>
 
@@ -13,9 +12,9 @@
 <script>
 /* import CalculadoraVue from "./components/CalculadoraVue.vue";
 import HelloWorld from "./components/HelloWorld.vue";
-import MiComponente from "./components/MiComponente.vue"; */
+import MiComponente from "./components/MiComponente.vue"; 
 import NavegadorVue from './components/NavegadorVue.vue';
-import ProductCard from './components/ProductCard.vue';
+import ProductCard from './components/ProductCard.vue';*/
 import Componente_Leave from './components/leaveVue.vue';
 
 export default {
@@ -24,8 +23,8 @@ export default {
 /*     HelloWorld,
     MiComponente,
     CalculadoraVue, */
-    NavegadorVue,
-    ProductCard,
+/*    NavegadorVue,
+    ProductCard, */
     Componente_Leave
   },
 };
