@@ -8,15 +8,18 @@
   <MiComponente prueba="estoy probando" />
   <HelloWorld msg="Welcome to Your Vue.js App" miMensaje="chau nos vemos" />
    <CalculadoraVue />  -->
+   <LeaveVue />
+   <ProductsVue />
    <FooterMiguel />
 </template>
 
 <script>
+import LeaveVue from './components/LeaveVue.vue';
 /* import CalculadoraVue from "./components/CalculadoraVue.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import MiComponente from "./components/MiComponente.vue"; */
 // import NavegadorVue from './components/NavegadorVue.vue';
-// import ProductCard from './components/ProductCard.vue';
+ import ProductsVue from './components/ProductsVue.vue';
 import FooterMiguel from './components/footerMiguel.vue';
 
 
@@ -29,7 +32,9 @@ export default {
         CalculadoraVue, */
     // NavegadorVue,
     // ProductCard,
-    FooterMiguel
+    FooterMiguel,
+    LeaveVue,
+    ProductsVue
 },
 };
 </script>
