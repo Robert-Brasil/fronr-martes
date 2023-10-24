@@ -1,36 +1,36 @@
 <template>
-<NavegadorVue />
-<<<<<<< HEAD
-<ProductCard />
-  <div >hola</div>
-=======
+<!-- <NavegadorVue />
+<ProductCard /> -->
 
- 
->>>>>>> 1b9772b3904693b0fa8fa3827d3405062a159c29
+
 
 <!--   <button>apretar</button>
   <MiComponente prueba="estoy probando" />
   <HelloWorld msg="Welcome to Your Vue.js App" miMensaje="chau nos vemos" />
    <CalculadoraVue />  -->
+   <FooterMiguel />
 </template>
 
 <script>
 /* import CalculadoraVue from "./components/CalculadoraVue.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import MiComponente from "./components/MiComponente.vue"; */
-import NavegadorVue from './components/NavegadorVue.vue';
-import ProductCard from './components/ProductCard.vue';
+// import NavegadorVue from './components/NavegadorVue.vue';
+// import ProductCard from './components/ProductCard.vue';
+import FooterMiguel from './components/footerMiguel.vue';
+
 
 
 export default {
   name: "App",
   components: {
-/*     HelloWorld,
-    MiComponente,
-    CalculadoraVue, */
-    NavegadorVue,
-    ProductCard
-  },
+    /*     HelloWorld,
+        MiComponente,
+        CalculadoraVue, */
+    // NavegadorVue,
+    // ProductCard,
+    FooterMiguel
+},
 };
 </script>
 
