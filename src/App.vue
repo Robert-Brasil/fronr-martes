@@ -1,40 +1,18 @@
 <template>
-<!-- <NavegadorVue />
-<ProductCard /> -->
-
-
-
-<!--   <button>apretar</button>
-  <MiComponente prueba="estoy probando" />
-  <HelloWorld msg="Welcome to Your Vue.js App" miMensaje="chau nos vemos" />
-   <CalculadoraVue />  -->
-   <LeaveVue />
-   <ProductsVue />
-   <FooterMiguel />
+  <HomeVue />
+  <footerMiguelVue />
 </template>
 
 <script>
-import LeaveVue from './components/LeaveVue.vue';
-/* import CalculadoraVue from "./components/CalculadoraVue.vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import MiComponente from "./components/MiComponente.vue"; */
-// import NavegadorVue from './components/NavegadorVue.vue';
- import ProductsVue from './components/ProductsVue.vue';
-import FooterMiguel from './components/footerMiguel.vue';
-
+import footerMiguelVue from './components/footerMiguel.vue';
+import HomeVue from './pages/HomeVue.vue';
 
 
 export default {
   name: "App",
   components: {
-    /*     HelloWorld,
-        MiComponente,
-        CalculadoraVue, */
-    // NavegadorVue,
-    // ProductCard,
-    FooterMiguel,
-    LeaveVue,
-    ProductsVue
+    HomeVue,
+    footerMiguelVue
 },
 };
 </script>
