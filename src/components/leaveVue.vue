@@ -1,6 +1,7 @@
 <template>
 
 <div class="contenedor">
+    <nav class="contenedor_nav_texto">
     <div class="contenedor_comillas">
         "
     </div>
@@ -10,13 +11,17 @@
     <div class="contenedor_autor">
         - Tama Brown
     </div>
-    <div class="contedor_leaveus">
-        <img src="./../assets/Frame34.jpg" class="contenedor_leaveus_img"/>
+    </nav>
+    <nav class="contenedor_nav_leaveypuntos">
+        <div class="contedor_leaveus">
+        <img src="./../assets/Frame34.jpg" class="contenedor_leaveus_img_rectangulo"/>
     </div>
     <div class="contedor_puntos">
-        <img src="./../assets/Component17.png" class="contenedor_leaveus_img"/>
+        <img src="./../assets/Component17.png" class="contenedor_leaveus_img_puntos"/>
     </div>
+</nav>
 </div>
+
 
 </template>
 
@@ -35,12 +40,21 @@ export default {
     width: 1160px;
     height: 310px;
     background: #F5F7FF;
+    
+  ;
 }
 
-.contenedor_comillas {
+.contenedor_nav_texto {
+    padding: 4%;
+    padding-inline: 80px;
     display: flex;
-    width: 46px;
-    height: 69px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.contenedor_comillas {
+    
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -75,7 +89,7 @@ export default {
     height: 36px;
     flex-direction: column;
     justify-content: center;
-    flex-shrink: 0;
+    flex-shrink: 30;
 
     color: #000;
     text-align: right;
@@ -85,6 +99,24 @@ export default {
     font-weight: 400;
     line-height: normal;
 }
+.contenedor_nav_leaveypuntos {
+    width:920px;
+    padding-inline: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.contenedor_leaveus_img_rectangulo {
+    display: inline-flex;
+    padding: 8px 26px;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+
+
 </style> 
 
     
