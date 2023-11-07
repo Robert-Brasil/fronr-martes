@@ -1,8 +1,10 @@
 <template>
     <h2>New Products</h2>
-    <div v-for="(product) in producto" :key="product.id" class="contenedor">
-      <ProductCard :producto="product" />  
-    </div>   
+    <div class="conte">
+      <div v-for="(product) in producto" :key="product.id">
+        <ProductCard :producto="product" />  
+      </div>  
+     </div>
 </template>
 
 <script>
@@ -39,10 +41,14 @@ export default {
 </script>
 
 <style scoped>
-.contenedor{
+.conte{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: red;
+  align-content:flex-end;
+  justify-content:space-around;
+  margin: 20px;
+  row-gap: 10px;
 }
+
 </style>

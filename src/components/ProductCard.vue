@@ -26,12 +26,35 @@ condicion && true
       <img src="../assets/ProductCard/ok.svg" alt="">
         in stock
       </h3>
-
+      <img src="../assets/ProductCard/corazon.svg" 
+      :class="{
+          contenedor__variable__corazon: true,
+          borrar: !verBotones,
+          mostrar: verBotones,
+        }"
+      alt="">
+      <img src="../assets/ProductCard/grafica.svg"
+      :class="{
+          contenedor__variable__grafica: true,
+          borrar: !verBotones,
+          mostrar: verBotones,
+        }"
+       alt="">
       <img :src="producto.image" alt="imagen" class="imagen" />
       <p>{{ producto.title }}</p>
       <h3>${{ producto.price }}</h3>
-      <button v-if="verBotones" class="contenedor__variable__add">Add To Cart</button>
-        <RatingVue :rate="producto.rating.rate * 20 + '%'" ></RatingVue>
+      <button 
+              :class="{
+          contenedor__variable__add: true,
+          borrar: !verBotones,
+          mostrar: verBotones,
+        }"
+      >
+            <img src="../assets/ProductCard/carrito.svg"
+       alt="">
+      Add To Cart
+      </button>
+      <RatingVue :rate="producto.rating.rate" :count="producto.rating.count" :id="producto.id" />
 
     </div>
   </div>
@@ -63,9 +86,11 @@ export default {
       if (this.ver) {
         setTimeout(() => {
           this.verBotones = true;
-        }, 500);
+        }, 300);
       } else {
-        this.verBotones = false;
+        setTimeout(() => {
+          this.verBotones = false;
+        }, 300);
       }
     },
   },
@@ -81,7 +106,7 @@ export default {
 .borrar {
   visibility: hidden;
   opacity: 0%;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .mostrar {
@@ -107,10 +132,10 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
+  align-items:flex-start;
+  justify-content:flex-start;
+  background-color: white;
+  padding: 25px auto;
 }
 
 .contenedor__variable--chico {
@@ -119,8 +144,10 @@ export default {
   height: 319px;
   position: absolute;
   top: 0px;
-  border: 1px solid #dddddd;
-    padding-top: 0px;
+  padding: 25px 0px 25px 0px;
+  box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.75);
 
 }
 
@@ -130,10 +157,12 @@ export default {
   top: -40px;
   width: 235px;
   height: 400px;
-  border: 1px solid #dddddd;
   z-index: 1;
   background-color: #ffffff;
   padding-top: 26px;
+box-shadow: 0px 0px 9px 3px rgba(125,123,123,0.48);
+-webkit-box-shadow: 0px 0px 9px 3px rgba(125,123,123,0.48);
+-moz-box-shadow: 0px 0px 9px 3px rgba(125,123,123,0.48);
 }
 
 .contenedor__variable__add{
@@ -150,18 +179,33 @@ padding: 8px 20px;
 bottom: 17px;
 left: 32px;
 width: 161px;
+z-index: 1;
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
 }
 
-@keyframes example {
-  from {
-    background-color: red;
-  }
-  to {
-    background-color: yellow;
-  }
-}
 .imagen {
   width: 150px;
   height: 150px;
+}
+
+.contenedor__variable__corazon{
+  position: absolute;
+  top: 51px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+
+.contenedor__variable__grafica{
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
 }
 </style>

@@ -1,23 +1,23 @@
 <template>
-  <HomeVue />
+  <router-view />
   <footerMiguelVue />
 </template>
 
 <script>
 import footerMiguelVue from './components/footerMiguel.vue';
-import HomeVue from './pages/HomeVue.vue';
-
 
 export default {
   name: "App",
   components: {
-    HomeVue,
     footerMiguelVue
 },
 };
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -64,6 +64,8 @@ p{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: left;
 }
+
 
 </style>

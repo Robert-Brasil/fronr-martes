@@ -1,16 +1,17 @@
 <template>
-      <svg width="70" height="13" xmlns="http://www.w3.org/2000/svg">
+<div class="RatingVue"> 
+      <svg :id = "id" width="70" height="13" xmlns="http://www.w3.org/2000/svg">
         <!-- Definimos un gradiente -->
         <linearGradient
-          id="estrellaGradiente"
+          :id="estrellaGradiente"
           x1="0%"
           y1="0%"
           x2="100%"
           y2="0%"
         >
-          <stop :offset="rate" style="stop-color: yellow; stop-opacity: 1" />
+          <stop :offset="this.rate * 20 + '%'" style="stop-color: yellow; stop-opacity: 1" />
           <!-- Mitad izquierda -->
-          <stop :offset="rate" style="stop-color: black; stop-opacity: 1" />
+          <stop :offset="this.rate * 20 + '%'" style="stop-color: grey; stop-opacity: 1" />
           <!-- Mitad derecha -->
         </linearGradient>
 
@@ -18,7 +19,7 @@
         <svg width="70" height="13" xmlns="http://www.w3.org/2000/svg">
         <!-- Definimos un gradiente -->
         <linearGradient
-          id="estrellaGradiente"
+          :id="estrellaGradiente"
           x1="0%"
           y1="0%"
           x2="100%"
@@ -33,7 +34,7 @@
         <!-- Estrella con el gradiente de cambio de color -->
 
         <svg width="300" height="13" xmlns="http://www.w3.org/2000/svg">
-  <path fill="url(#estrellaGradiente)"
+  <path :fill="'url(#' + estrellaGradiente + ')'"
     id="FiveStars"
     d="M7.06724 0.173835C7.1044 0.10127 7.2081 0.10127 7.24526 0.173834L9.08547 3.76772C9.1 3.79609 9.12717 3.81583 9.15864 3.82088L13.1453 4.46045C13.2258 4.47337 13.2578 4.572 13.2003 4.62976L10.351 7.49048C10.3285 7.51306 10.3181 7.54501 10.323 7.57649L10.9467 11.5657C10.9593 11.6462 10.8754 11.7072 10.8027 11.6703L7.20147 9.84443C7.17305 9.83002 7.13945 9.83002 7.11103 9.84443L3.50983 11.6703C3.43712 11.7072 3.35322 11.6462 3.36581 11.5657L3.98948 7.57649C3.99441 7.54501 3.98403 7.51306 3.96154 7.49048L1.1122 4.62976C1.05467 4.572 1.08672 4.47337 1.16721 4.46045L5.15386 3.82088C5.18533 3.81583 5.2125 3.79609 5.22703 3.76772L7.06724 0.173835Z
       M21.06724 0.173835C21.1044 0.10127 21.2081 0.10127 21.24526 0.173834L23.08547 3.76772C23.1 3.79609 23.12717 3.81583 23.15864 3.82088L27.1453 4.46045C27.2258 4.47337 27.2578 4.572 27.2003 4.62976L24.351 7.49048C24.3285 7.51306 24.3181 7.54501 24.323 7.57649L24.9467 11.5657C24.9593 11.6462 24.8754 11.7072 24.8027 11.6703L21.20147 9.84443C21.17305 9.83002 21.13945 9.83002 21.11103 9.84443L17.50983 11.6703C17.43712 11.7072 17.35322 11.6462 17.36581 11.5657L17.98948 7.57649C17.99441 7.54501 17.98403 7.51306 17.96154 7.49048L15.1122 4.62976C15.05467 4.572 15.08672 4.47337 15.16721 4.46045L19.15386 3.82088C19.18533 3.81583 19.2125 3.79609 19.22703 3.76772L21.06724 0.173835Z
@@ -46,7 +47,11 @@
       </svg>
 
       </svg>
-   
+         <div class="RatingVue__text">
+        Reviews ({{count}})
+      </div>
+</div>
+
 </template>
 
 <script>
@@ -54,7 +59,36 @@
 export default {
   name: "RatingVue",
   props: {
-    rate:String
-  }
+    rate:String,
+    count:String,
+    id:Number
+  },
+  data() {
+    return {
+      estrellaGradiente:  parseFloat(this.rate) * 20 + "%"
+    };
+  }  
 };
+
 </script>
+
+<style scoped>
+.RatingVue{
+  display: flex;
+  height: 30px;
+  padding: 10px 0px 6px 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 9.156px;
+}
+
+.RatingVue__text{
+color: var(--Color---5, #A2A6B0);
+text-align: center;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+margin-bottom: 15px;
+}
+</style>

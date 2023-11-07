@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "Componente_Leave",
+  name: "leaveVue",
   props: {
     prueba: String,
   },
