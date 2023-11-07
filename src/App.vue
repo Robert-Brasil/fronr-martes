@@ -1,17 +1,14 @@
 <template>
-  <HomeVue />
+  <router-view />
   <footerMiguelVue />
 </template>
 
 <script>
 import footerMiguelVue from './components/footerMiguel.vue';
-import HomeVue from './pages/HomeVue.vue';
-
 
 export default {
   name: "App",
   components: {
-    HomeVue,
     footerMiguelVue
 },
 };

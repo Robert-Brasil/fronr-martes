@@ -1,4 +1,39 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import ErrorVue from './pages/ErrorVue'
+import HomeVue from './pages/HomeVue'
+import CatalogVue from './pages/CatalogVue'
+import FaqVue from './pages/FaqVue'
+
+import { createRouter, createWebHashHistory } from 'vue-router'
+
+const routes = [
+    {
+        path:"/", component: HomeVue
+    },
+    {
+        path:"/catalog", component: CatalogVue
+    },
+    {
+        path:"/faq", component: FaqVue
+    },
+    {
+        path: '/:pathMatch(.*)*', component: ErrorVue
+    },
+
+] 
+
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes,
+  });
+
+
+const app = createApp(App).use(router);
+
+app.use(router);
+
+app.mount("#app");
+
+
