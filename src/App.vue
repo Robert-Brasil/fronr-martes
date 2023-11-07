@@ -4,18 +4,8 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import footerMiguelVue from './components/footerMiguel.vue';
 import HomeVue from './pages/HomeVue.vue';
-=======
-import LeaveVue from './components/LeaveVue.vue';
-/* import CalculadoraVue from "./components/CalculadoraVue.vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import MiComponente from "./components/MiComponente.vue"; */
-import NavegadorVue from './components/NavegadorVue.vue';
-import ProductsVue from './components/ProductsVue.vue';
-
->>>>>>> f01eb2850217df937e85f30c4b89cd49fe40354c
 
 
 export default {
@@ -28,6 +18,9 @@ export default {
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;600&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -74,6 +67,8 @@ p{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: left;
 }
+
 
 </style>

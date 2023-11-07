@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import LeaveVue from '../components/LeaveVue.vue';
+import LeaveVue from '../components/leaveVue.vue';
 /* import CalculadoraVue from "./components/CalculadoraVue.vue";
 import HelloWorld from "./components/HelloWorld.vue";
 import MiComponente from "./components/MiComponente.vue"; */
