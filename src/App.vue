@@ -4,18 +4,8 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import footerMiguelVue from './components/footerMiguel.vue';
 import HomeVue from './pages/HomeVue.vue';
-=======
-import LeaveVue from './components/LeaveVue.vue';
-/* import CalculadoraVue from "./components/CalculadoraVue.vue";
-import HelloWorld from "./components/HelloWorld.vue";
-import MiComponente from "./components/MiComponente.vue"; */
-import NavegadorVue from './components/NavegadorVue.vue';
-import ProductsVue from './components/ProductsVue.vue';
-
->>>>>>> f01eb2850217df937e85f30c4b89cd49fe40354c
 
 
 export default {
