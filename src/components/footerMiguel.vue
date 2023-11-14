@@ -12,9 +12,12 @@
         <p class="footer_your_email">Your Email</p>
         
         </div>
-           <button>
+          <router-link to ="/suscribirse">
             <div class="button_subscribe">Subscribe</div>
-          </button>
+          </router-link>
+
+            
+
       </div>
     </div>
 
@@ -176,13 +179,19 @@
    
   }
   .button_subscribe{
-   
+       background: blue;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 151px;
+    height: 50px;
+    border-radius: 30px;
     color: #FFF;
    font-family: Poppins;
    font-size: 14px;
    font-style: normal;
    font-weight: 600;
-  margin-left: 30px;
   }
   .foter{
     display: flex;
