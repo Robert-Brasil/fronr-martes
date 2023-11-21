@@ -98,7 +98,7 @@ export default {
     ver() {
       this.mostrarBotones();
     },
-  },
+  }, 
 };
 </script>
 
