@@ -6,6 +6,7 @@ import HomeVue from './pages/HomeVue'
 import CatalogVue from './pages/CatalogVue'
 import FaqVue from './pages/FaqVue'
 import SuscribeVue from './pages/SuscribeVue'
+import ProductsVue from './pages/ProductsVue' 
 
 
 import { createRouter, createWebHashHistory } from 'vue-router'
@@ -22,6 +23,9 @@ const routes = [
     },
     {
         path:"/suscribirse", component: SuscribeVue
+    },
+    {
+        path:"/producto/:id", component: ProductsVue, name: 'params'
     },
     {
         path: '/:pathMatch(.*)*', component: ErrorVue

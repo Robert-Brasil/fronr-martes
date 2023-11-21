@@ -5,59 +5,61 @@ condicion && true
 */
 
 <template>
-  <div class="contenedor">
+  <router-link :to="`producto/${producto.id}`">
+    <div class="contenedor">
 
-    <div
-      :class="{
-        'contenedor__variable--chico': !ver,
-        'contenedor__variable--grande': ver,
-      }"
-      @mouseover="ver = true"
-      @mouseleave="ver = false"
-    >
-
-      <h3
+      <div
         :class="{
-          contenedor__variable__stock: true,
-          borrar: !verBotones,
-          mostrar: verBotones,
+          'contenedor__variable--chico': !ver,
+          'contenedor__variable--grande': ver,
         }"
+        @mouseover="ver = true"
+        @mouseleave="ver = false"
       >
-      <img src="../assets/ProductCard/ok.svg" alt="">
-        in stock
-      </h3>
-      <img src="../assets/ProductCard/corazon.svg" 
-      :class="{
-          contenedor__variable__corazon: true,
-          borrar: !verBotones,
-          mostrar: verBotones,
-        }"
-      alt="">
-      <img src="../assets/ProductCard/grafica.svg"
-      :class="{
-          contenedor__variable__grafica: true,
-          borrar: !verBotones,
-          mostrar: verBotones,
-        }"
-       alt="">
-      <img :src="producto.image" alt="imagen" class="imagen" />
-      <p>{{ producto.title }}</p>
-      <h3>${{ producto.price }}</h3>
-      <button 
-              :class="{
-          contenedor__variable__add: true,
-          borrar: !verBotones,
-          mostrar: verBotones,
-        }"
-      >
-            <img src="../assets/ProductCard/carrito.svg"
-       alt="">
-      Add To Cart
-      </button>
-      <RatingVue :rate="producto.rating.rate" :count="producto.rating.count" :id="producto.id" />
 
+        <h3
+          :class="{
+            contenedor__variable__stock: true,
+            borrar: !verBotones,
+            mostrar: verBotones,
+          }"
+        >
+        <img src="../assets/ProductCard/ok.svg" alt="">
+          in stock
+        </h3>
+        <img src="../assets/ProductCard/corazon.svg" 
+        :class="{
+            contenedor__variable__corazon: true,
+            borrar: !verBotones,
+            mostrar: verBotones,
+          }"
+        alt="">
+        <img src="../assets/ProductCard/grafica.svg"
+        :class="{
+            contenedor__variable__grafica: true,
+            borrar: !verBotones,
+            mostrar: verBotones,
+          }"
+        alt="">
+        <img :src="producto.image" alt="imagen" class="imagen" />
+        <p>{{ producto.title }}</p>
+        <h3>${{ producto.price }}</h3>
+        <button 
+                :class="{
+            contenedor__variable__add: true,
+            borrar: !verBotones,
+            mostrar: verBotones,
+          }"
+        >
+              <img src="../assets/ProductCard/carrito.svg"
+        alt="">
+        Add To Cart
+        </button>
+        <RatingVue :rate="producto.rating.rate" :count="producto.rating.count" :id="producto.id" />
+
+      </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
