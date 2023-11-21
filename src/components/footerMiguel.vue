@@ -36,9 +36,9 @@
      <li>Privacy Policy</li>
      <li>Search</li>
      <li>Terms</li>
-     <li>Orders and Returns</li>
-     <li>Contact Us</li>
-     <li>Advanced Subscription</li>
+     <!-- <li>Orders and Returns</li> -->
+     <!-- <li>Contact Us</li> -->
+     <!-- <li>Advanced Subscription</li> -->
     
   </div> 
 
@@ -51,9 +51,9 @@
    <li>Graphic Cards</li>
    <li>Keyboards / Mice</li>
    <li>Cases / Power Spporlies</li>
-   <li>Softwared</li>
+   <!-- <li>Softwared</li>
    <li>Speakers / Headsets</li>
-   <li>Motherboards</li>
+   <li>Motherboards</li> -->
   </div>
 
   <div class="tarjeta3">
@@ -61,9 +61,9 @@
    <li>Custom PCs</li>
    <li>Servers</li>
    <li>MSI All-In-One PCs</li>
-   <li>HP/Compaq PCs</li>
-   <li>ASUS PCs</li>
-   <li>Tecs PCs</li>
+  git -->
+   <!-- <li>ASUS PCs</li>
+   <li>Tecs PCs</li>  -->
   </div>
 
   <div class="tarjeta4">
@@ -71,9 +71,9 @@
    <li>Everyday Use Notebooks</li>
    <li>MSI Workstation Series</li>
    <li>MSI Prestige Series</li>
-   <li>Tablets and Pads</li>
-   <li>Netbooks</li>
-   <li>Infinity Gaming Notebooks</li>
+   <!-- <li>Tablets and Pads</li> -->
+   <!-- <li>Netbooks</li>
+   <li>Infinity Gaming Notebooks</li> -->
   </div>
 
   <div class="tarjeta5">
@@ -203,8 +203,9 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 7%;
+    height: 250px;
     width: 1300px;
     border-bottom: 2px solid  rgba(255, 255, 255, 0.50);
   
@@ -232,7 +233,7 @@
    flex-direction: column;
     background: black;
     width: 230px;
-    height: 255px;
+    height: 200px;
     color: #FFF;
    font-family: Poppins;
    font-size: 13px;
