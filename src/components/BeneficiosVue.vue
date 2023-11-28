@@ -1,36 +1,37 @@
-<template class="externalFrame">
-  <div class="externalFrame__internalFrame">
-    <div class="externalFrame__internalFrame__support">        
-      <div class="externalFrame__internalFrame__support__image">
-        <img src="../assets/BeneficiosVue/blueEllipse.svg">
-        <img src="../assets/BeneficiosVue/support.svg">
+<template>
+  <div class="externalFrame">
+    <div class="externalFrame__internalFrame">
+      <div class="externalFrame__support">
+        <div class="externalFrame__internalFrame__image">
+          <img src="../assets/BeneficiosVue/blueEllipse.svg" class="ellipse">
+          <img src="../assets/BeneficiosVue/support.svg" class="supportIcon">
+        </div>
+        <div class="externalFrame__internalFrame__title">Product Support</div>
+        <div class="externalFrame__internalFrame__text">
+          Up to 3 years on-site warranty available for your peace of mind.
+        </div>
       </div>
-      <div class="externalFrame__internalFrame__titleSupport">Product Support</div>
-      <div class="externalFrame__internalFrame__textSupport">
-        Up to 3 years on-site warranty available for your peace of mind.
+      <div class="externalFrame__account">
+        <div class="externalFrame__internalFrame__image">
+          <img src="../assets/BeneficiosVue/blueEllipse.svg" class="ellipse">
+          <img src="../assets/BeneficiosVue/account.svg" class="accountIcon">
+        </div>
+        <div class="externalFrame__internalFrame__title">Personal Account</div>
+        <div class="externalFrame__internalFrame__text">
+          With big discounts, free delivery and a dedicated support specialist.
+        </div>
+      </div>
+      <div class="externalFrame__priceTag">
+        <div class="externalFrame__internalFrame__image">
+          <img src="../assets/BeneficiosVue/blueEllipse.svg" class="ellipse">
+          <img src="../assets/BeneficiosVue/priceTag.svg" class="priceTagIcon">
+        </div>
+        <div class="externalFrame__internalFrame__title">Amazing Savings</div>
+        <div class="externalFrame__internalFrame__text">
+          Up to 70% off new Products, you can be sure of the best price.
+        </div>
       </div>
     </div>
-    <div class="externalFrame__internalFrame__account">
-      <div class="externalFrame__internalFrame__account__image">        
-        <img src="../assets/BeneficiosVue/blueEllipse.svg">
-        <img src="../assets/BeneficiosVue/account.svg">
-      </div>
-      <div class="externalFrame__internalFrame__titleAccount">Personal Account</div>
-      <div class="externalFrame__internalFrame__textAccount">
-        With big discounts, free delivery and a dedicated support specialist.
-      </div>
-    </div>
-    <div class="externalFrame__internalFrame__priceTag">
-      <div class="externalFrame__internalFrame__priceTag__image">       
-        <img src="../assets/BeneficiosVue/blueEllipse.svg">
-        <img src="../assets/BeneficiosVue/priceTag.svg">
-      </div>
-      <div class="externalFrame__internalFrame__titleSavings">Amazing Savings</div>
-      <div class="externalFrame__internalFrame__textSavings">
-        Up to 70% off new Products, you can be sure of the best price.
-      </div>
-    </div>
-    
   </div>
 </template>
 
@@ -41,164 +42,58 @@ export default {
 </script>
 
 <style scoped>
-.externalFrame__internalFrame__support__image {
-  position: relative;
-  margin-bottom: 20px;
+.externalFrame {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  height: 273px;
+  background: #F5F7FF;
 }
-
-.externalFrame__internalFrame__support__image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.externalFrame__internalFrame__account__image {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.externalFrame__internalFrame__account__image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.externalFrame__internalFrame__priceTag__image {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.externalFrame__internalFrame__priceTag__image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-
 
 .externalFrame__internalFrame {
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Espacio uniforme entre los elementos internos */
 }
 
-/* .externalFrame__internalFrame__support * {
-  box-sizing: border-box;
-} */
-.externalFrame__internalFrame__support {
+/* Estilos comunes para las imágenes */
+.externalFrame__internalFrame__image {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.externalFrame__internalFrame__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+/* Estilos específicos para cada sección */
+.externalFrame__support,
+.externalFrame__account,
+.externalFrame__priceTag {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  
-  /* justify-content: flex-start; */
-  /* position: relative; */
-}
-.externalFrame__internalFrame__titleSupport {
-  color: #000000;
-  text-align: center;
-  font: 700 18px/132.5% "Poppins", sans-serif;
-  /* position: relative; */
-  /* display: flex;
   align-items: center;
-  justify-content: center; */
-}
-.externalFrame__internalFrame__textSupport {
-  color: #000000;
   text-align: center;
-  font: 400 14px/140% "Poppins", sans-serif;
-  opacity: 0.699999988079071;
-  /* position: relative; */
-  width: 265px;
-  display: flex;
-  align-items: center;
   justify-content: center;
+
+  padding: 20px;
 }
 
-/* .externalFrame__internalFrame__account * {
-  box-sizing: border-box;
-} */
-.externalFrame__internalFrame__account {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  /* justify-content: flex-start; */
-  /* position: relative; */
-}
-.externalFrame__internalFrame__titleAccount {
+.externalFrame__internalFrame__title {
   color: #000000;
-  text-align: center;
   font: 700 18px/132.5% "Poppins", sans-serif;
-  /* position: relative; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.externalFrame__internalFrame__textAccount {
-  color: #000000;
-  text-align: center;
-  font: 400 14px/140% "Poppins", sans-serif;
-  opacity: 0.699999988079071;
-  /* position: relative; */
-  width: 265px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
-.externalFrame__internalFrame__titleSupport {
+.externalFrame__internalFrame__text {
   color: #000000;
-  text-align: center;
-  font: 700 18px/132.5% "Poppins", sans-serif;
-  /* position: relative; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.externalFrame__internalFrame__textSupport {
-  color: #000000;
-  text-align: center;
   font: 400 14px/140% "Poppins", sans-serif;
-  opacity: 0.699999988079071;
-  /* position: relative; */
+  opacity: 0.7;
   width: 265px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* .externalFrame__internalFrame__priceTag * {
-  box-sizing: border-box;
-} */
-.externalFrame__internalFrame__priceTag {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  /* justify-content: flex-start; */
-  /* position: relative; */
-}
-.externalFrame__internalFrame__titleSavings {
-  color: #000000;
-  text-align: center;
-  font: 700 18px/132.5% "Poppins", sans-serif;
-  /* position: relative; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.externalFrame__internalFrame__textSavings {
-  color: #000000;
-  text-align: center;
-  font: 400 14px/140% "Poppins", sans-serif;
-  opacity: 0.699999988079071;
-  /* position: relative; */
-  width: 265px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 </style>
