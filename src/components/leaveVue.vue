@@ -49,7 +49,7 @@ export default {
     padding-inline: 80px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content:space-around;
     align-items: center;
 }
@@ -100,23 +100,31 @@ export default {
     line-height: normal;
 }
 .contenedor_nav_leaveypuntos {
-    width:920px;
-    padding-inline: 80px;
+    width: 800;
+    padding-inline: 80px; 
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
+
 }
 .contenedor_leaveus_img_rectangulo {
     display: inline-flex;
     padding: 8px 26px;
     align-items: center;
     gap: 10px;
+    position: relative;
+    top: -40px; left: -40px;
     
-
+ 
 }
-
-
+.contedor_puntos {
+    display: inline-flex;
+    padding: 8px 26px;
+    
+    position: relative;
+    top: -40px
+}
 </style> 
 
     
