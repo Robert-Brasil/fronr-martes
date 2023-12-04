@@ -1,15 +1,18 @@
 <template>
+  <HidenMenu />
   <router-view />
   <footerMiguelVue />
 </template>
 
 <script>
+import HidenMenu from './components/HidenMenu.vue';
 import footerMiguelVue from './components/footerMiguel.vue';
 
 export default {
   name: "App",
   components: {
-    footerMiguelVue
+    footerMiguelVue,
+    HidenMenu
 },
 };
 </script>
